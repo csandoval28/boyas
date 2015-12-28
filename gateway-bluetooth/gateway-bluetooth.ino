@@ -6,7 +6,7 @@
 #include <EthernetClient.h>
 #include <EthernetServer.h>
 #include <EthernetUdp.h>
-//#include <util.h>
+#include <util.h>
 
 #include <nRF24L01.h>
 
@@ -81,16 +81,16 @@ void loop() {
       
     
       
-      char data_str[32];
+      char outBuffer[32];
       //bool done = false;
   
         
         while(radio.available()){
-  radio.read( &data_str, sizeof(data_str) );
-  printf(data_str);
+  radio.read( &outBuffer, sizeof(outBuffer) );
+  printf(outBuffer);
 
-  BT.println(data_str);
-  Serial.println(data_str);
+  BT.println(outBuffer);
+  Serial.println(outBuffer);
 
 
       }
