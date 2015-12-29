@@ -9,3 +9,5 @@ worked on mac with version 1.0.6
 May need to download some libraries:
   For Gateway may need Util.h- get it here  "https://github.com/PaulStoffregen/Ethernet"
   Download as zip and add to library. see adding zip library here . "https://www.arduino.cc/en/Guide/Libraries#toc"
+
+  For node:  will need OneWire.h library.  
