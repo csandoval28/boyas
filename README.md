@@ -2,7 +2,7 @@
 boyas in caleta tumbes chile
 12/28/2015
 
-Code is working.
+Code is working with arduino uno. 
 Notes:  
 had problems with newer versions of arduino.
 worked on mac with version 1.0.6
