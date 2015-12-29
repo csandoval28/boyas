@@ -262,10 +262,10 @@ void loop(void)
    float temp=celsius;
 
   
-  dtostrf(temp, 6, 2, floatBuf1);  
-  dtostrf(x, 4, 2, floatBuf2);
-  dtostrf(y, 4, 2, floatBuf3);
-  dtostrf(z, 4, 2, floatBuf4);
+  dtostrf(temp, 5, 2, floatBuf1);  
+  dtostrf(x, 1, 2, floatBuf2);
+  dtostrf(y, 1, 2, floatBuf3);
+  dtostrf(z, 1, 2, floatBuf4);
 
   
   for (int i=0; i <= 12; i++){
@@ -274,7 +274,7 @@ void loop(void)
    }
 Serial.println("");
 
-  sprintf(outBuffer, "3+11+%s+%s+%s+%s", floatBuf1, floatBuf2, floatBuf3,floatBuf4);
+  sprintf(outBuffer, "3+12+%s+%s+%s+%s", floatBuf1, floatBuf2, floatBuf3,floatBuf4);
 
   Serial.print("testing data string:  ");
   Serial.println(outBuffer);
